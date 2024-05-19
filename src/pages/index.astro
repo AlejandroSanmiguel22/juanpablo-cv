@@ -1,0 +1,47 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Badge from '../components/Badge.astro';
+import LindkeInIcon from '../components/icons/LinkeIn.astro';
+import GmailIcon from '../components/icons/Gmail.astro';
+import SocialPill from '../components/SocialPill.astro';
+---
+
+<Layout title="Juan Pablo Sanmiguel Galeano - Negocios Internacionales "
+	description="Explora el perfil de Juan Pablo Sanmiguel Galeano en Negocios Internacionales, graduado de la Universidad del Rosario. Descubre su formación, habilidades y experiencia en el mundo de los negocios a nivel internacional."
+>
+	<main>
+
+		<section class="w-full mx-auto lg:w-[740px] py-44">
+			<img 
+				class="rounded-full size-12 mb-4" 
+				src="https://media.licdn.com/dms/image/D4E03AQEpqnRU-QxTJA/profile-displayphoto-shrink_800_800/0/1712600357097?e=1721865600&v=beta&t=lGcOBBjyVjc5WHSo2VmM5OjE8LCnoXTDsAxp4h8Y_GQ" alt="juanpablo photo" />
+			<h1 class="text-white text-5xl font-bold flex flex-row gap-x-4 pb-10">
+				Hey, soy Juan Pablo
+				<a href="https://www.linkedin.com/in/juan-pablo-sanmiguel/"
+					target="_blank" 
+					rel="noopener"
+					class="flex justify-center items-center">
+					<Badge>Disponible para trabajar</Badge>
+				</div>
+			</h1>
+			<h2 class="text-xl opacity-80">
+				Estudiante de <span class="text-yellow-200 font-bold">Negocios Internacionales</span> en la <span class="text-red-200 font-bold">Universidad del Rosario</span>, Bogotá, Colombia 🇨🇴,
+				con conocimientos sólidos en <span class="font-bold">negocios y administración</span>, incluyendo <span class="font-bold">finanzas y mercados financieros</span>.
+				Habilidades en <span class="font-bold">análisis financieros</span> e <span class="font-bold">idiomas</span>, y experiencia en <span class="font-bold">servicio al cliente</span> y <span class="font-bold">emprendimiento de triple impacto</span>.
+			</h2>
+			
+			<nav class="flex gap-x-2 mt-8">
+					<SocialPill href="https://www.linkedin.com/in/juan-pablo-sanmiguel/"> 
+						<LindkeInIcon class="size-6" />
+						LinkedIn
+					</SocialPill>
+					<SocialPill href="https://www.linkedin.com/in/juan-pablo-sanmiguel/"> 
+						<GmailIcon class="size-6" />
+						Gmail
+					</SocialPill>
+			</nav>
+		</section>
+		
+	</main>
+</Layout>
+
