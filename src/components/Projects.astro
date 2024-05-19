@@ -1,0 +1,49 @@
+---
+import LinkButton from "./LinkButton.astro"
+
+const PROJECTS = [
+  {
+    title: "Bolsa para principiantes",
+    description:
+      "Bolsa de Valores de Colombia (BVC), Bogotá D.C.",
+    image: "https://media.licdn.com/dms/image/D4E0BAQFUpoVWRWveWg/company-logo_200_200/0/1694531051780/bvccolombia_logo?e=1724284800&v=beta&t=YwUUTf9p2Qtp01WlY-mnPi4SFkt-KLY9BHudTEAiJxs",
+  },
+  {
+    title: "Excel Intermedio",
+    description:
+      "Universidad del Rosario",
+    image: "https://ascofapsi.org.co/wp-content/uploads/2022/05/urosario.png",
+  },
+  {
+    title: "Congreso Internacional de Logística",
+    description:
+      "Universidad del Rosario",
+    image: "https://ascofapsi.org.co/wp-content/uploads/2022/05/urosario.png",
+  },
+]
+---
+
+<div class="flex flex-col gap-y-16">
+  {
+    PROJECTS.map(({ image, title, description }) => (
+    <article class="flex flex-col space-x-0 space-y-8 group md:flex-row md:space-x-8 md:space-y-0">
+    <div class="w-20 h-20 flex items-center justify-center">
+        <img alt="xdxd" class="w-20 h-20" loading="lazy" src={image} />
+    </div>
+
+
+  <div class="w-full md:w-1/2 md:max-w-lg">
+    <h3 class="text-2xl font-bold text-gray-800 dark:text-gray-100">
+      {title}
+    </h3>
+    <div class="flex flex-wrap mt-2">
+
+      <div class="mt-2 text-gray-700 dark:text-gray-400">{description}</div>
+      <footer class="flex items-end justify-start mt-4 gap-x-4">
+        </footer>
+    </div>
+  </div>
+</article>
+    ))
+  }
+</div>

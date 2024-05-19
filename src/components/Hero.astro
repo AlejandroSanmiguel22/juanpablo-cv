@@ -1,0 +1,47 @@
+---
+const personalImageAlt = "Juan Pablo"
+import Badge from "../components/Badge.astro"
+import LinkedInIcon from "../components/icons/LinkeIn.astro"
+import MailIcon from "../components/icons/Gmail.astro"
+import SocialPill from "../components/SocialPill.astro"
+---
+
+<div class="max-w-xl">
+  <div class="flex gap-4 mb-4">
+    <img
+      class="rounded-full shadow-lg size-16"
+      src="https://media.licdn.com/dms/image/D4E03AQEpqnRU-QxTJA/profile-displayphoto-shrink_800_800/0/1712600357097?e=1721865600&v=beta&t=lGcOBBjyVjc5WHSo2VmM5OjE8LCnoXTDsAxp4h8Y_GQ"
+      alt={personalImageAlt}
+    />
+    <a
+      href="https://www.linkedin.com/in/juan-pablo-sanmiguel/"
+      target="_blank"
+      rel="noopener"
+      class="flex items-center transition md:justify-center md:hover:scale-105"
+    >
+      <Badge>Disponible para trabajar</Badge>
+    </a>
+  </div>
+  <h1
+    class="text-4xl font-bold tracking-tight text-gray-800 sm:text-5xl dark:text-white"
+  >
+    Hey, soy Juan Pablo
+  </h1>
+  <p
+    class="mt-6 text-xl text-gray-800 dark:[&>strong]:text-yellow-200 [&>strong]:text-yellow-500 [&>strong]:font-semibold dark:text-gray-300"
+  >
+    Estudiante de <span class="text-yellow-200 font-bold">Negocios Internacionales</span> en la <span class="text-red-200 font-bold">Universidad del Rosario</span>, Bogotá, Colombia 🇨🇴,
+    con conocimientos sólidos en <span class="font-bold">negocios y administración</span>, incluyendo <span class="font-bold">finanzas y mercados financieros</span>.
+    Habilidades en <span class="font-bold">análisis financieros</span> e <span class="font-bold">idiomas</span>, y experiencia en <span class="font-bold">servicio al cliente</span> y <span class="font-bold">emprendimiento de triple impacto</span>.
+  </p>
+  <nav class="flex flex-wrap gap-4 mt-8">
+    <SocialPill href="mailto:juan.sanmiguel@urosario.edu.co">
+      <MailIcon class="size-4" />
+      Contáctame
+    </SocialPill>
+    <SocialPill href="https://www.linkedin.com/in/juan-pablo-sanmiguel/">
+      <LinkedInIcon class="size-4" />
+      LinkedIn
+    </SocialPill>
+  </nav>
+</div>
